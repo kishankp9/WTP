@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Great+Vibes'>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Merienda+One'>
+	<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Berkshire+Swash'>
+	<link rel="stylesheet" type="text/css" href="slideshow.css">
+	<style type="text/css">
+		/*#b2{
+			background-image: url("f5.jpg");
+			filter: blur(5px);
+			background-size: cover;
+			/*color: gold;*/
+			/*height: 5165px;
+			width: 3872px;
+		}*/
+		#up{
+			font-family: Tangerine, sans-serif;
+			font-size: 7em;
+			text-align: center;
+			color: black;
+			/*font-weight: bold;*/
+			padding-top: 0.3em;
+		}
+		#od{
+			padding-top: 2em;
+			padding-left: 6.2em;
+			font-size: 2em;
+			font-family: Georgia;
+			color: gold;
+		}
+
+		#ani {
+			font-size: 1em;
+		    width: 250px;
+		    height: 30px;
+		    color: whitesmoke;
+		    font-weight: bold;
+		    background-color: black;
+		    position: relative;
+		   /* -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+		    animation: myfirst 7s linear 2s infinite alternate;
+		}
+
+		@keyframes myfirst {
+		    0%   {background-color:olive; left:0px; top:0px;}
+		    50%   {background-color:olive; left:600px; top:0px;}
+		    100% {background-color:olive; left:1260px; top:0px;}
+		}
+
+		#animore {
+		    width: 10px;
+		    height: 10px;
+		    background-color: red;
+		    position: relative;
+		   /* -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+		    animation: myfirst 5s linear 2s infinite alternate;
+		}
+
+		body, html{
+			height: 100%;
+		}
+		.bg-img{
+			background-image: url("abc.jpg");
+			filter: blur(8px);
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.img2{
+			background-image: url("f6.jpg");
+			filter: blur(4px);
+			height: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+
+
+		
+		.bg-text {
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0, 0.1); /* Black w/opacity/see-through */ 
+			color: white;
+			/*font-weight: bold;*/
+			font-family: Tangerine;
+			/* border: 3px solid #f1f1f1;*/
+			position: absolute;
+			top: 20%;
+			font-size: 5em;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+		}
+
+
+		.stuff{
+			color: ghostwhite;
+			font-family: Helvetica;
+			position: absolute;
+			top: 50%;
+			font-size: 1.6em;
+			left: 10%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+		}
+		.stuff ul li{
+			font-size: 0.9em;
+			position: relative;
+			left: 120%;
+			color: whitesmoke;
+			font-family: Merienda One;
+		}
+		.more{
+			position: absolute;
+			top: 75%;
+			left: 35%;
+			font-family: Berkshire Swash;
+			font-weight: bold;
+			font-size: 1.7em;
+			color: black;
+		}
+
+		.v{
+			position: absolute;
+			top: 185%;
+			left:5%;
+		}
+	
+	</style>
+</head>
+<body >
+	<div class="menubar">   
+    	<ul align="center" id = "nav">
+	      	<li><p>&nbsp;&nbsp;</p></li>
+	        <li><a href="index.html">Home</a></li>
+	     	<li><a href="HP.html">Destination</a></li>
+	        <li><a href="booknow.html">Book Flights</a></li>
+	        <li><a href="bookhotel.html">Book Hotels</a></li>
+        	<li style="float:right"><a class = "active" href="register.php" target="_blank">Login</a></li>
+		</ul>
+  </div>
+ <!--  <a href="login.html"></a> -->
+  <!-- <div id = "ani">Sign up now for more exiting offers!</div></a> -->
+ 	<div class="bg-img"></div>
+	<div class="bg-text">Welcome to Fly-Tel!</div>
+	<div class="stuff">Our Destinations : 
+		<ul style="list-style-type: square;">
+			<li>Delhi</li>
+			<li>Bangalore</li>
+			<li>Mumbai</li>
+		</ul>
+	</div>
+
+	<button onclick="topFunction()" id="myButton" title="Go to top">Back to Top</button>
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myButton").style.display = "block";
+	    } else {
+	        document.getElementById("myButton").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	}
+
+	</script>
+
+
+
+
+	
+	<div class="more">Services we offer :<br><br>
+<div class="row">
+  <div class="column">
+    <img src="f1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="h.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="run.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="c.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="f1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="h.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="run.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="c.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="f1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Flights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="h.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hotels">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="run.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ameneties">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="c.jpg" style="width:100%" onclick="currentSlide(4)" alt="Customer Care">
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!-- <video width="320" height="240" controls>
+	<source src="got.mp4" type="video/mp4">
+</video> -->
+<div class = "img2"></div>
+<div class = "v">
+<video height="160" width="240" controls>
+	<source src="got.mp4" type="video/mp4">
+</video>
+</div>
+<div class="page2" style="font-family: Great Vibes">
+	 Stuck up on where to go?<br>
+	 You've come to the right place!
+</div>
+	
+
+</body>
+</html>

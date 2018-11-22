@@ -1,0 +1,138 @@
+/*
+p{
+	font-family: "Times New Roman",Georgia,Serif;
+	font-family: "Helvetica"; /*fantasy;
+	font-size: 1.2em;
+}
+*/
+p{
+	font-family: "Helvetica",Georgia,Serif;
+	font-family: "Helvetica"; /*fantasy;*/
+	font-size: 1.2em;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008B8B;
+}
+
+#nav li {
+    float: left;
+}	
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 21px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: teal;
+}
+
+#sumthn{
+	padding-left: 24em;
+	font-size: 1.2em;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+
+footer {
+	height: 50px;
+	background-color: black;
+	color: white;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 15px;
+	/*box-shadow: 10px 10px 5px #888888
+*/
+}
+
+
+#myButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #008B8B;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myButton:hover {
+  background-color: #555;
+}
+
+.page2{
+	position: relative;
+	bottom: 90%;
+	left: 60%;
+	font-size: 2.5em;
+	color: #008B8B;
+	font-family: Verdana;
+}
+
+#search_r{
+
+        font-size: 50px;
+
+        color: black;
+
+        /*text-decoration: overline;*/
+
+        /*text-shadow: 3px 2px aqua;*/
+
+        font-family: Times New Roman;
+
+
+        font-weight: bold;
+
+      }
+      table, th, td {
+
+			    border: 2px solid black;
+
+			    border-collapse: collapse;
+
+			}
+
+
+
+		th, td {
+
+		    padding: 10px;
+
+		    text-align: left; 
+
+		}
+	 #naam{
+
+        width: 300px;
+
+        height: 32px
+
+      }
+      #p2{
+
+				font-size: 1em;
+
+				font-family: Times New Roman;
+
+        font-weight: bolder;
+
+			}

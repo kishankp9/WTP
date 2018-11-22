@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html> 
+
+	<head>
+
+		<link rel="stylesheet" href="styles.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+
+		<link href='https://fonts.googleapis.com/css?family=Homemade Apple' rel='stylesheet'>
+
+		<title>Destination</title>
+
+		<style type="text/css">
+
+
+
+			table, th, td {
+
+			    border: 2px solid black;
+
+			    border-collapse: collapse;
+
+			}
+
+
+
+			th, td {
+
+			    padding: 10px;
+
+			    text-align: left; 
+
+			}
+
+			#p1{
+
+				font-size: 1.6em;
+
+				font-family: Tahoma;
+
+        text-decoration: underline;
+
+			}
+
+			#p2{
+
+				font-size: 1em;
+
+				font-family: Times New Roman;
+
+        font-weight: bolder;
+
+			}
+			#tab{
+        padding-top: 1em;
+
+				padding-left: 60em;
+
+			}
+
+      #search_r{
+
+        font-size: 50px;
+
+        color: black;
+
+        /*text-decoration: overline;*/
+
+        /*text-shadow: 3px 2px aqua;*/
+
+        font-family: Times New Roman;
+
+        font-weight: bold;
+
+      }
+
+      body{
+
+        background-image: url("f3.jpg");
+
+        background-position: center;
+
+      }
+
+
+
+      th{
+
+        background-color: olive;
+
+        color: black;
+
+        font-family: Arial;
+
+
+
+      }
+
+      td{
+
+        font-family: Trebuchet MS;
+
+      }
+
+      #naam{
+
+        width: 300px;
+
+        height: 32px
+
+      }
+
+      #flightNum{
+
+        font-size: 1em;
+
+        color: ghostwhite;
+
+      }
+
+      .democ{
+        background-color: darkgreen;
+      }
+
+      ul{
+        background-color: teal;
+      }
+
+	</style>
+
+</head>
+
+
+
+<body id = "b1" >
+
+<div class="menubar">   
+
+    <ul align="center">
+
+      <li><p>&nbsp;&nbsp;</p></li>
+
+       <li><p>&nbsp;&nbsp;</p></li>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="HP.html">Destination</a></li>
+          <li><a href="booknow.html">Book Flights</a></li>
+          <li><a href="bookhotel.html">Book Hotels</a></li>
+          <li style="float:right"><a class = "active" href="register.php" target="_blank">Login</a></li>
+
+    </ul>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <br>
+
+  <p id = "search_r">Search results  : </p>
+
+  
+
+  <form action="demo.php" method="post">
+
+
+
+  <table style="width:100%" id = "t">
+
+    <tr>
+
+      <th>Departure</th>
+
+      <th>Arrival</th>
+
+      <th>Flights</th>
+
+      <th>Fare</th>
+
+      <th>Seats left</th>
+
+      <th>Select</th>
+
+    </tr>
+
+    <tr id="r1"><td>10:00</td>
+
+        <td>12:30</td>
+
+        <td id = "1">6E-147</td>
+
+        <td>5000</td>
+
+        <td>4</td>
+
+        <td><input type="radio" name="123" value="1" id="fl1"></td>
+
+    </tr>
+
+    <tr id = "r2">
+
+      <td>11:45</td>
+
+      <td>14:00</td>
+
+      <td id = "2">6E-456</td>
+
+      <td>4550</td>
+
+      <td>2</td>
+
+      <td><input type="radio" name="123" value="2" id="fl2"></td>
+
+    </tr>
+
+    <tr id = "r3">
+
+      <td>15:00</td>
+
+      <td>17:30</td>
+
+      <td id = "3">6E-969</td>
+
+      <td>7550</td>
+
+      <td>6</td>
+
+      <td><input type="radio" name="123" value="3" id="fl3"></td>
+
+    </tr>
+
+  </table>
+
+  </form>
+
+  <div id = "tab">
+
+  <button onclick="showFlight()"> Submit </button></div>
+
+  <br>
+
+  <form action="demo.php" method="post">
+
+
+
+  	<div id= "p1" ><p>Enter Passenger Details :</p></div><br>
+
+    <div id = "p2">
+
+    Name : <input type="text" name="fname" placeholder="Enter your name here" id="naam"><br><br>
+
+    Gender : <input type="radio" name="gender" value="m">M
+
+    		 <input type="radio" name="gender" value="f">F
+
+    		 <br><br>
+
+    
+
+    DOB:<input type="date" name="dob">
+
+    <br><br>
+
+    Email-id : <input type="email" name="email" placeholder="123@example.com" id="naam"  ><br><br>
+
+    Flight Number : <a id = "flightNum"><input type="text" name="fno" placeholder="flight no."></a><br><br>
+
+    Confirm Flight Number : <input type="text" name="fno1" placeholder="flight no."><br><br>
+
+    <center><input type="submit" name="s"><br></center>
+
+
+
+    <!-- <p id="flightNum">Select a Flight</p> -->
+
+	</div>
+
+
+
+ <script type="text/javascript">
+
+  function showFlight(){
+
+   var flight = "Select a Flight";
+   send()
+
+   if(document.getElementById("fl1").checked)
+
+    flight = "6E-147";
+
+   else if(document.getElementById("fl2").checked)
+
+    flight = "6E-456";
+
+   else if(document.getElementById("fl3").checked)
+
+    flight = "6E-969";
+
+    document.getElementById("flightNum").innerHTML = flight;
+
+  }
+
+  function send(){
+    if(document.getElementById("fl1").checked){
+        document.getElementById("r1").setAttribute("class", "democ");
+        document.getElementById("r2").removeAttribute("class");
+        document.getElementById("r3").removeAttribute("class");
+      }
+    else if(document.getElementById("fl2").checked){
+        document.getElementById("r2").setAttribute("class", "democ");
+        document.getElementById("r1").removeAttribute("class");
+        document.getElementById("r3").removeAttribute("class");      
+    }
+    else if(document.getElementById("fl3").checked){
+        document.getElementById("r3").setAttribute("class", "democ");
+        document.getElementById("r2").removeAttribute("class");
+        document.getElementById("r1").removeAttribute("class");      
+    }
+  }
+
+ </script>
+
+
+
+</body>

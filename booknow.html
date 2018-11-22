@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<title>Book Flights</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body>
+<div class="menubar">   
+    <ul align="center">
+      <li><p>&nbsp;&nbsp;</p></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="HP.html">Destination</a></li>
+          <li><a href="booknow.html">Book Flights</a></li>
+          <li><a href="bookhotel.html">Book Hotels</a></li>
+          <li style="float:right"><a class = "active" href="register.php" target="_blank">Login</a></li>
+
+    </ul>
+  </div>
+</body>
+
+
+
+<body class="w3-light-grey">
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="moscow.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
+    </div>
+
+
+    <script type="text/javascript">
+      function bend()
+      {
+        if((document.getElementById("blr").checked)&&document.getElementById("dl1").checked){
+           var myWindow = window.open("table.html");
+          console.log(document.getElementById("blr").checked)
+          console.log(document.getElementById("dl1").checked)
+        }
+        else if((document.getElementById("dl").checked)&&document.getElementById("blr1").checked)
+        {
+          var myWindow1=window.open("table.html");
+        }
+        else if((document.getElementById("mum").checked)&&document.getElementById("blr1").checked)
+        {
+          var myWindow2=window.open("table1.html");
+        }
+        else if((document.getElementById("blr").checked)&&document.getElementById("mum1").checked){
+          var myWindow3=window.open("table1.html");
+        }
+        else if((document.getElementById("dl").checked)&&document.getElementById("mum1").checked){
+          var myWindow4 = window.open("table2.html");
+        }
+        else if((document.getElementById("mum").checked)&&document.getElementById("dl1").checked){
+          var myWindow5=window.open("table2.html");
+        }
+        else
+        {
+          alert("Choose correct city");
+        }
+        
+      }
+    
+    
+    </script>
+
+    <!-- Tabs -->
+    <form>
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Travel the world with us</h3>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="w3-half">
+          <label>From</label>
+          <input type="radio" name="city" value="blr" id='blr'>Bangalore
+          <input type="radio" name="city" value="dl" id='dl'>Delhi
+          <input type="radio" name="city" value="mum" id='mum'>Mumbai
+        </div>
+        <div class="w3-half">
+          <label>To</label>
+          <input type="radio" name="city1" value="blr1" id='blr1'>Bangalore
+          <input type="radio" name="city1" value="dl1" id='dl1'>Delhi
+          <input type="radio" name="city1" value="mum1" id='mum1'>Mumbai
+      </div>
+      <p><button class="w3-button w3-dark-grey" onclick="bend()">Search and find dates</button></p>
+    </div>
+  </form>
+  </div>
+</header>
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+  <!-- Good offers -->
+  <div class="w3-container w3-margin-top">
+    <h3>Good Offers Right Now</h3>
+    <h6>Up to <strong>50%</strong> discount.</h6>
+  </div>
+  <div class="w3-row-padding w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="venice.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Venice</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="andaman.jpg" alt="New York" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Andaman</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="Dubai.jpg" alt="San Francisco" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Dubai</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="tajmahal.jpeg" alt="Pisa" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">New Delhi</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="paris.jpg" alt="Paris" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Paris</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore Nature -->
+  <div class="w3-container">
+    <h3>Explore Nature</h3>
+    <p>Travel with us and see nature at its finest.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <img src="dubrovnik.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Dubrovnik, Croatia</h3>
+        <p>An experience like never before</p>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <img src="Shimla.jpg" alt="Austria" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Mountains, Shimla</h3>
+        <p>Serenity at its peak</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  
+  <!-- Contact -->
+  <div class="w3-container">
+    <h2>Contact</h2>
+    <p>Let us book your next trip!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Bangalore, India<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +080 222-4848<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: xxx@gmail.com<br>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+body {
+    font-size: 22px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+} 
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 21px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+}
+.p1{
+  font-family: Times New Roman;
+  font-size: 0.2em;
+}
+
+* {box-sizing: border-box;}
+.body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+.slideshow-container img {vertical-align: middle; width:200px; height:500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.name {
+	font-family:'Allura';
+	text-align:center;
+	font-size:100px;
+	overflow:hidden;
+	line-height: 1;
+}
+.name p{
+	font-family:'Allura';
+	font-size:30px;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 400px;
+  height: 250px;
+  float:center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #333;
+}
+
+.container:hover .overlay {
+  opacity: 0.75;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 10px;
+}
+
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius:50%;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container1:hover .overlay1 {
+  opacity: 1;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.row1 {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column1 {
+    flex: 33.33%;
+}
+
+/*#naam{
+  height: 
+  width: 200px;
+}*/
+input[type=text]{
+  width: 220px;
+}
+
+ .idk{
+      background-image: url("map.jpg");
+      /*filter: blur(8px);*/
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+#search_r{
+
+        font-size: 50px;
+
+        color: black;
+
+        /*text-decoration: overline;*/
+
+        /*text-shadow: 3px 2px aqua;*/
+
+        font-family: Times New Roman;
+
+        font-weight: bold;
+
+      }
+
+      table, th, td {
+
+          border: 2px solid black;
+
+          border-collapse: collapse;
+
+      }
+
+
+
+      th, td {
+
+          padding: 10px;
+
+          text-align: left; 
+
+      }
+      
+       #naam{
+
+        width: 300px;
+
+        height: 32px
+
+      }

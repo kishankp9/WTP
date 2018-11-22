@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Hotels</title>
+  <link rel="stylesheet" type="text/css" href="style3.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Pacifico'>
+  <style type="text/css">
+    #tab{
+      padding-left: 81em;
+    }
+    th{
+
+        background-color: #1F618D  ;
+
+        color: black;
+
+        font-family: Arial;
+
+
+
+      }
+
+      td{
+
+        /*background-color: #D4E6F1;*/
+
+        font-family: Trebuchet MS;
+
+      }
+      #p1{
+
+        font-size: 1.6em;
+
+        font-family: Tahoma;
+
+        text-decoration: underline;
+
+      }
+      #hname{
+        font-weight: bold;
+        font-size: 1.3em;
+        font-family: Pacifico;
+      }
+
+      .putc{
+        background-color: #85C1E9  ;
+      }
+
+
+  </style>
+</head>
+<body style="background-color: #D6EAF8  ">
+  <div class="menubar">   
+      <ul align="center" id = "nav">
+          <li><p>&nbsp;&nbsp;</p></li>
+          <li><p>&nbsp;&nbsp;</p></li>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="HP.html">Destination</a></li>
+          <li><a href="booknow.html">Book Flights</a></li>
+          <li><a href="bookhotel.html">Book Hotels</a></li>
+          <li style="float:right"><a class = "active" href="register.php" target="_blank">Login</a></li>
+    </ul>
+  </div>
+   <p id = "search_r">Search results  : </p>
+
+   <form action="demo2.php" method="post">
+   <table style="width: 100%" id = "t2">
+     <tr>
+       <th>Hotel Name</th>
+       <th>Fare(per night)</th>
+       <th>Rooms available</th>
+       <th>Select</th>
+     </tr>
+     <tr id = "r1">
+       <td>Marriott</td>
+       <td>9500</td>
+       <td>5</td>
+       <td><input type="radio" name="hotel_name" value="1" id="h1"></td>
+     </tr>
+     <tr id = "r2">
+       <td>Prestige</td>
+       <td>3600</td>
+       <td>8</td>
+       <td><input type="radio" name="hotel_name" value="1" id="h2"></td>
+     </tr>
+     <tr id="r3">
+       <td>Oberoi</td>
+       <td>6200</td>
+       <td>18</td>
+       <td><input type="radio" name="hotel_name" value="1" id="h3"></td>
+     </tr>
+   </table>
+ </form><br>
+  <div id = "tab">
+  <button onclick="showHotel()"> Submit </button></div>
+  </div><br><br><hr><br><br>
+  <form action="demo2.php" method="post">
+    <div id="p1">Enter your details : </div><br><br>
+    <div id = "p2">
+
+    Name : <input type="text" name="fname" placeholder="Enter your name here" id="naam"><br><br>
+
+    Gender : <input type="radio" name="gender" value="m">M
+
+         <input type="radio" name="gender" value="f">F<br><br>
+   
+
+    DOB:<input type="date" name="dob"><br><br>
+
+    
+
+    Email-id : <input type="email" name="email" placeholder="123@example.com" id="naam"  ><br><br>
+
+    Hotel name : <a id = "hname"><input type="text" name="h_name" placeholder="Hotel name."></a><br><br>
+
+    Confirm Hotel Name : <input type="text" name="hno" placeholder="Hotel name"><br><br>
+
+    <center><input type="submit" name="s"><br></center>
+
+    <script type="text/javascript">
+      function showHotel(){
+        var hotel = "Select a hotel";
+        bend()
+        if(document.getElementById("h1").checked)
+          hotel = "Marriott";
+        else if(document.getElementById("h2").checked)
+          hotel = 'Prestige';
+        else if(document.getElementById("h3").checked)
+          hotel = "Oberoi";
+        document.getElementById("hname").innerHTML = hotel;
+
+      }
+
+      function bend(){
+    if(document.getElementById("h1").checked){
+        document.getElementById("r1").setAttribute("class", "putc");
+        document.getElementById("r2").removeAttribute("class");
+        document.getElementById("r3").removeAttribute("class");
+      }
+    else if(document.getElementById("h2").checked){
+        document.getElementById("r2").setAttribute("class", "putc");
+        document.getElementById("r1").removeAttribute("class");
+        document.getElementById("r3").removeAttribute("class");      
+    }
+    else if(document.getElementById("h3").checked){
+        document.getElementById("r3").setAttribute("class", "putc");
+        document.getElementById("r2").removeAttribute("class");
+        document.getElementById("r1").removeAttribute("class");      
+    }
+  }
+
+    </script>
+
+
+  </div>
+  </form>
+
+
+
+</body>
+</html>
